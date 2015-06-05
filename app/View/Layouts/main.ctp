@@ -16,12 +16,57 @@
 		echo $this->Html->css('/js/font-awesome/css/font-awesome.min');
 		echo $this->Html->css('/js/morrisjs/morris.css');
 		//echo $this->Html->meta('icon');
-
 		echo $this->Html->script('jquery/dist/jquery.min.js');
 		echo $this->Html->script('bootstrap/dist/js/bootstrap.min.js');
-		echo $this->Html->script('metisMenu/dist/metisMenu.min.js');
-		echo $this->Html->script('raphael/raphael-min.js');
-		echo $this->Html->script('morrisjs/morris.min.js');
+		//echo $this->Html->script('metisMenu/dist/metisMenu.min.js');
+		//echo $this->Html->script('raphael/raphael-min.js');
+		//echo $this->Html->script('morrisjs/morris.min.js');
+		echo $this->Html->script('angular/angular.js');
+		echo $this->Html->script('angular/angular-resource.js');
+		echo $this->Html->script('angular/angular-route.js');
+		echo $this->Html->script('angular/angular-animate.js');
+		echo $this->Html->script('angular/angular-sanitize.js');
+		        
+		echo $this->Html->script('angular/angular-cookies.js');
+		//echo $this->Html->script('angular/angular-translate.js');
+		//echo $this->Html->script('angular/angular-translate-loader-url.js');		        
+
+		//echo $this->Html->script('angularspinner/angularspinner.min.js');
+		//echo $this->Html->script('select2/select2.js');
+		//echo $this->Html->script('select2/ui_select2.js');
+		//echo $this->Html->script('angular/angular/angular-ui-bootstrap.js');
+		//echo $this->Html->script('angular/taggedInfiniteScroll.min.js');
+		//echo $this->Html->script('angular/bsDropdown.min.js');
+
+		echo $this->Html->script('angular/ocLazyLoad.min.js');
+		echo $this->Html->script('angular/angular-ui-router.min.js');
+		echo $this->Html->script('angular/statehelper.min.js');
+		//echo $this->Html->script('angular/ng-infinite-scroll.js');
+
+		echo $this->Html->script('underscore/underscore.js');
+		//echo $this->Html->script('ladda-spin/spin.min.js');
+		//echo $this->Html->script('ladda-spin/spin.min.js');
+		//echo $this->Html->script('angular/angular-loading.min.js');
+
+		/*echo $this->Html->script('app/app.js');
+		echo $this->Html->script('app/app.config.js');
+		echo $this->Html->script('app/app.run.js');
+		echo $this->Html->script('app/app.directive.js');
+		echo $this->Html->script('app/app.filter.js');
+		echo $this->Html->script('app/app.factory.js');
+		echo $this->Html->script('app/app.constant.js');
+		echo $this->Html->script('app/app.tilesDirective.js');
+		echo $this->Html->script('app/app.lfs_object.js');
+		echo $this->Html->script('app/app.directive.js');*/
+
+
+		
+
+
+		
+
+		
+
 ?>
 </head>
 <body>
