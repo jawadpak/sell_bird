@@ -1,0 +1,1 @@
+Hi Junaid <?php echo $msg; ?> 
