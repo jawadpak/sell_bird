@@ -44,7 +44,7 @@
                                     <input class="form-control">
                                     </div>
                                 </div>
-								<button class="btn btn-outline btn-warning btn-lg" type="submit">Submit</button>
+								<button class="btn btn-outline btn-warning" type="submit">Submit</button>
                             </form> 
                 </div>
  			</div>
