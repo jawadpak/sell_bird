@@ -44,6 +44,17 @@
                                     <input class="form-control">
                                     </div>
                                 </div>
+								 <div class="form-group">
+                                    <label class="col-xs-2 control-label">City:</label>
+                                    <div class="col-xs-5">
+                                    <select class="form-control">
+										<option>Lahore</option>
+										<option>Karachi</option>
+										<option>Multan</option>
+										<option>Islamabad/Rawalpindi</option>
+									</select>
+                                    </div>
+                                </div>
 								<button class="btn btn-outline btn-warning" type="submit">Submit</button>
                             </form> 
                 </div>
