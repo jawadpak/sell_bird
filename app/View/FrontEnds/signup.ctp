@@ -55,6 +55,12 @@
 									</select>
                                     </div>
                                 </div>
+								<div class="form-group">
+                                    <label class="col-xs-2 control-label">You are robot 5 + 6 =</label>
+                                     <div class="col-xs-5">
+                                     <input class="form-control" placeholder="Enter text">
+                                     </div>
+                                </div>
 								<button class="btn btn-outline btn-warning" type="submit">Submit</button>
                             </form> 
                 </div>
