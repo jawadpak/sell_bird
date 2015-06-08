@@ -1,1 +1,2 @@
-Hi Junaid <?php echo $msg; ?> 
+<?php //echo $msg; ?> 
+<div ui-view></div>

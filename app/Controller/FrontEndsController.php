@@ -9,14 +9,12 @@ class FrontEndsController extends AppController {
 		$this->set('msg',$msg);
 	}
 	
+	public function landing() {
+		$this->layout = null;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	public function signup() {
+		$this->layout = null;
+	}
 }
 ?>
