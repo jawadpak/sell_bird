@@ -31,7 +31,7 @@
 		//echo $this->Html->script('angular/angular-translate.js');
 		//echo $this->Html->script('angular/angular-translate-loader-url.js');		        
 
-		//echo $this->Html->script('angularspinner/angularspinner.min.js');
+	
 		//echo $this->Html->script('select2/select2.js');
 		//echo $this->Html->script('select2/ui_select2.js');
 		//echo $this->Html->script('angular/angular/angular-ui-bootstrap.js');
@@ -45,11 +45,15 @@
 
 	echo $this->Html->script('underscore/underscore.js');
 		//echo $this->Html->script('ladda-spin/spin.min.js');
-		//echo $this->Html->script('ladda-spin/spin.min.js');
-		//echo $this->Html->script('angular/angular-loading.min.js');
+	
+	echo $this->Html->script('ladda-spin/spin.min.js');
+	echo $this->Html->script('angularspinner/angularspinner.min.js');
+	//echo $this->Html->script('angular/angular-loading.min.js');
 
 	echo $this->Html->script('app/app.js');
 	echo $this->Html->script('app/router.js');
+	echo $this->Html->script('app/app.constant');
+	echo $this->Html->script('app/app.factory');
 		/*echo $this->Html->script('app/app.run.js');
 		echo $this->Html->script('app/app.directive.js');
 		echo $this->Html->script('app/app.filter.js');

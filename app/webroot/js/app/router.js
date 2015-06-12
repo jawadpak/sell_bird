@@ -1,7 +1,8 @@
 // app.config.js
-sellBird.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+sellBird.config(['$stateProvider', '$urlRouterProvider','$provide', function($stateProvider, $urlRouterProvider,$provide){
 
  $urlRouterProvider.otherwise('/main');
+  var url = 'http://localhost/sell_bird/';
 
  $stateProvider
  .state('main', {
@@ -24,7 +25,7 @@ sellBird.config(['$stateProvider', '$urlRouterProvider', function($stateProvider
        loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
          return $ocLazyLoad.load({
            name: 'sellBird',
-           files: []
+           files: [url+'js/app/signup/signupcontroller.js']
 
        });
      }]
