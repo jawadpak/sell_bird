@@ -16,5 +16,6 @@ class FrontEndsController extends AppController {
 	public function signup() {
 		$this->layout = null;
 	}
+	
 }
 ?>

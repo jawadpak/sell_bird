@@ -28,6 +28,7 @@
 	echo $this->Html->script('angular/angular-sanitize.js');
 
 	echo $this->Html->script('angular/angular-cookies.js');
+	
 		//echo $this->Html->script('angular/angular-translate.js');
 		//echo $this->Html->script('angular/angular-translate-loader-url.js');		        
 
@@ -74,24 +75,39 @@
 		?>
 	</head>
 	<body ng-app="sellBird">
-		<div id="wrapper">
-			<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">SB Admin v2.0</a>
-				</div>
-				<!-- /.navbar-header -->
-
-				<ul class="nav navbar-top-links navbar-right">
+    
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Sell</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+      
 					<li>
-						<span>Login </span> | <a href="#signup"><span>Sign Up</span></a>
+						 <a href="#javascript:;">HOME</a>
 					</li>
-					<li class="dropdown">
+                    <li>
+						 <a href="#javascript:;">SALE</a>
+					</li>
+                    <li>
+						<a href="#signup">SIGN UP</a>
+					</li>
+                    <li>
+						 <a href="#javascript:;">EVENTS</a>
+					</li>
+                    <li>
+						 <a href="#javascript:;">LINKS</a>
+					</li>
+                    
+					<!--<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							<i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
 						</a>
@@ -104,26 +120,29 @@
 							<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 							</li>
 						</ul>
-						<!-- /.dropdown-user -->
-					</li>
+						
+					</li>-->
 					<!-- /.dropdown -->
-				</ul>
-				<!-- /.navbar-top-links -->
-
-				<!-- /.navbar-static-side -->
-			</nav>
-			<div id="page-wrapper">
+				
+      </ul>
+      
+    </nav>
+    </div>
+</div>
+</div>
+	<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<?php echo $this->fetch('content'); ?>
 					</div>
 				</div>
 			</div>
-		</div>
+</div>
     	<!--
     	<div class="row">
     		<?php //echo $this->element('sql_dump'); ?>
     	</div>
     -->
+
 </body>
 </html>

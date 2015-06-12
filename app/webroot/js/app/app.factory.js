@@ -37,10 +37,8 @@ angular.module('SellBirdFactory', ['ngResource'])
                 });
         },
         getPostData: function(url, params, postData, callback) {
-            $http.post(constantRestApi.baseUrl + url, postData, {
-                headers: header,
-                params: params,
-                timeout: canceler.promise
+            $http.post(constantVal.url + url+".json", postData, {
+                params: params
             }).
             success(function(data, status, headers, config) {
                     // this callback will be called asynchronously

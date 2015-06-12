@@ -30,4 +30,37 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+
+	public function beforeSave($options=array()){
+			
+		/*$userID = null;
+		
+		if (isset($_SESSION['Auth']['User']['id'])) {
+			$userID = $_SESSION['Auth']['User']['id'];
+		}
+		
+		if (empty($userID) && isset($_GET['user_id']) && !empty($_GET['user_id'])) {
+			$userID = $_GET['user_id'];
+		}
+		
+		if (!empty($userID)) {
+			if (isset($this->_schema['created_by']) && empty($primar_key) ){
+				$this->data[$this->name]['created_by'] = $userID;
+			}
+			if (isset($this->_schema['updated_by'])){
+				$this->data[$this->name]['updated_by'] = $userID;
+			}
+		}*/
+
+		$primar_key = $this->id; 
+		
+		if(isset($this->data[$this->name]['id']) && empty($primar_key)){
+			$primar_key = $this->data[$this->name]['id']; 
+		}
+		
+		if (isset($this->_schema['uuid']) && empty($primar_key)){
+			$this->data[$this->name]['uuid'] = String::uuid();
+		}
+		return true;
+	}
 }
